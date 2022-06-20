@@ -2,7 +2,7 @@ const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 
 const goNext = (qIdx) => {
-    let q = document.querySelector('qBox');
+    let q = document.querySelector('.qBox');
     q.innerHTML = qnaList[qIdx].q;
 }
 
