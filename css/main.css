@@ -1,0 +1,11 @@
+#main {
+    background-color: rgb(254, 254, 254);
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 15%;
+}
+
+p {
+    font-size: 22px;
+}
