@@ -1,9 +1,43 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 
+const answerButton = (addAnswer, qIdx) => {
+    let answerBox = document.querySelector(".answerBox");
+    let button = document.createElement("button");
+    button.classList.add('answerList');
+    button.classList.add('mx-auto');
+    button.classList.add('my-3');
+    button.classList.add('py-3');
+    button.classList.add('fadeIn');
+
+
+    answerBox.appendChild(button)
+    button.innerHTML = addAnswer;
+
+    button.addEventListener("click", function () {
+        let children = document.querySelectorAll(".answerList");
+        for (let i = 0; i < children.length; i++) {
+            // children[i].disabled = true;
+            children[i].style.WebkitAnimation = "fadeOut 0.5s";
+            children[i].style.animation = "fadeOut 0.5s";
+        }
+        setTimeout(() => {
+            for (let i = 0; i < children.length; i++) {
+                children[i].style.display = 'none';
+            }
+            goNext(++qIdx);
+        },450)
+       
+    })
+}
+
 const goNext = (qIdx) => {
     let q = document.querySelector('.qBox');
     q.innerHTML = qnaList[qIdx].q;
+    for (let i in qnaList[qIdx].a) {
+        answerButton(qnaList[qIdx].a[i].answer, qIdx);
+
+    }
 }
 
 const begin = () => {
