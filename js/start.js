@@ -141,7 +141,7 @@ const begin = () => {
             main.style.display = "none";
             qna.style.display = "block";
         });
-        let qIdx = 0;
+        let qIdx = 11;
         goNext(qIdx);
     },450)
 }
