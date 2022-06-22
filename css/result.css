@@ -1,3 +1,22 @@
 #result{
     display: none;
+    background-color: rgb(254, 254, 254);
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 15%;
+}
+
+
+.resultDesc {
+    font-size: 22px;
+}
+
+.resultName {
+    font-size: 26px;
+}
+
+.kakao {
+    color: white;
+    background-color: #FEE500;
 }
