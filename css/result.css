@@ -7,6 +7,14 @@
     margin-top: 15%;
 }
 
+#shareResult{
+    background-color: rgb(254, 254, 254);
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 15%;
+}
+
 
 .resultDesc {
     font-size: 22px;
@@ -27,4 +35,17 @@
 .kakao:hover, .kakao:focus {
     background-color: whitesmoke;
     color: #FEE500;
+}
+
+.goHome {
+    color: white;
+    background-color: pink;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.goHome:hover, .goHome:focus {
+    background-color: whitesmoke;
+    color: pink;
 }
